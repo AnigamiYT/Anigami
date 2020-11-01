@@ -1,0 +1,27 @@
+{
+  "name": "anigami",
+  "version": "1.0.0",
+  "description": "anigami bot",
+  "main": "main.js",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnigamiYT/Anigami.git"
+  },
+  "keywords": [
+    "Anigami",
+    "Bot"
+  ],
+  "author": "Anigami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnigamiYT/Anigami/issues"
+  },
+  "homepage": "https://github.com/AnigamiYT/Anigami#readme"
+}
