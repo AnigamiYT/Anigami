@@ -1,0 +1,23 @@
+{
+  "name": "anigamibot",
+  "version": "1.0.0",
+  "description": "anigami bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "anigami_impact_bot"
+  },
+  "keywords": [
+    "anigami",
+    "impact",
+    "bot"
+  ],
+  "author": "Anigami",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  }
+}
