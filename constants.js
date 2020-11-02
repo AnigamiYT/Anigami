@@ -6,9 +6,12 @@ module.exports = {
         pityCounter5star: 1,
         inventory: {},
         lastDaily: 0,
+        lastWeekly: 0,
+        lastMonthly: 0,
     },
     generalBanner5Star: ['Diluc', 'Jean', 'Mona', 'Keqing', 'Qiqi', '5-Star-Weapon'],
     generalBanner4Star: ['Fischl', 'Amber', 'Bennett', 'Barbara', 'Lisa', 'Kaeya', 'Chongyun', 'Xiangling', 'Xingqiu', 'Beidou', 'Sucrose', 'Razor', '4-Star-Weapon'],
     kleeBanner5Star: ['Diluc', 'Jean', 'Mona', 'Keqing', 'Qiqi', 'Klee'],
-    weapons3Star: ['Debate-Club', 'Cold-Steel'],
+    weapons3Star: ['Debate-Club', 'Cold-Steel', 'Sharpshooter\'s-Oath', 'Magic-Guide', 'Harbringer-of-Dawn', 'Raven-Bow', 'Ferrous-Shadow', 'Slingshot'],
+    weapons: ['Debate-Club', 'Cold-Steel', 'Sharpshooter\'s-Oath', 'Magic-Guide', 'Harbringer-of-Dawn', 'Raven-Bow', 'Ferrous-Shadow', 'Slingshot'],
 }
