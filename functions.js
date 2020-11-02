@@ -15,7 +15,7 @@ module.exports = {
         if (value < 0.057) {
             return constants.generalBanner4Star[Math.floor(Math.random() * constants.generalBanner4Star.length)];
         }
-        return 'Debate-Club';
+        return constants.weapons3Star[Math.floor(Math.random() * constants.weapons3Star.length)];
         // else if (value < 0.057) {
         //     return constants.generalBanner5Star[Math.floor(Math.random() * constants.generalBanner.length)];
         // }
