@@ -3,14 +3,8 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const fs = require('fs');
 const constants = require('./constants.js');
-const { generalBanner, printObject } = require('./functions.js');
 
 let userData = JSON.parse(fs.readFileSync('Storage/userData.json', 'utf8'));
-
-// Cooldown Constants
-const dailyCooldown = 8.64e+7;
-const weeklyCooldown = 8.64e+7 * 7;
-const monthlyCooldown = 8.64e+7 * 30;
 
 // Importing Functions
 bot.commands = new Discord.Collection();
@@ -32,7 +26,8 @@ bot.on('message', message => {
 
     const sender = message.author;
     const msg = message.content.toUpperCase();
-    const prefix = '~!';
+    const prefix = '!';
+    const msg_arr_normal_case = message.content.split(" ");
     const msg_arr = msg.split(" ");
 
     if (message.author.bot) {
@@ -69,8 +64,19 @@ bot.on('message', message => {
             break;
         }
     
-        case prefix + 'INVENTORY': {
-            bot.commands.get("check_inventory").execute(message, userData);
+        // NOT IN USE FOR NOW
+        // case prefix + 'INVENTORY': {
+        //     bot.commands.get("check_inventory").execute(message, userData);
+        //     break;
+        // }
+    
+        case prefix + 'WEAPONS': {
+            bot.commands.get("check_weapons").execute(message, userData);
+            break;
+        }
+    
+        case prefix + 'CHARACTERS': {
+            bot.commands.get("check_characters").execute(message, userData);
             break;
         }
     
@@ -83,13 +89,31 @@ bot.on('message', message => {
             userData = bot.commands.get("claim_weekly").execute(message, userData);
             break;
         }
-        case prefix + 'GIVE': {
-            userData = bot.commands.get("give_primogems").execute(message, userData, msg_arr);
+
+        case prefix + 'MONTHLY': {
+            userData = bot.commands.get("claim_monthly").execute(message, userData);
             break;
         }
-    }
+
         // COMMANDS FOR ADMIN
-    
+        // case prefix + 'GIVE': {
+        //     if (msg_arr[1] !== undefined && msg_arr[2] !== undefined)
+        //         userData = bot.commands.get("give_primogems").execute(message, userData, msg_arr);
+        //     break;
+        // }
+
+        // case prefix + 'GIVE_WEAPON': {
+        //     if (msg_arr[1] !== undefined && msg_arr[2] !== undefined)
+        //         userData = bot.commands.get("give_weapon").execute(message, userData, msg_arr_normal_case);
+        //     break;
+        // }
+
+        // case prefix + 'GIVE_CHARACTER': {
+        //     if (msg_arr[1] !== undefined && msg_arr[2] !== undefined)
+        //         userData = bot.commands.get("give_character").execute(message, userData, msg_arr_normal_case);
+        //     break;
+        // }
+    }    
 
         // ALL EXECUTE
         userData[sender.id].messageSent++;

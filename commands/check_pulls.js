@@ -10,7 +10,7 @@ module.exports = {
     
         try {
             if (userData[sender.id]) {
-                message.channel.send(`<@${sender.id}> you have ${Math.floor(userData[sender.id].primogems/160)} remaining pulls.`);
+                message.channel.send(`<@${sender.id}>\n${Math.floor(userData[sender.id].primogems/160)} <:A_Afate:769909854201446441>`);
             }
             else {
                 message.channel.send(`<@${sender.id}> you have no remaining pull`)

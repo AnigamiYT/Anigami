@@ -17,12 +17,12 @@ module.exports = {
             if (Date.now() - userData[sender.id].lastWeekly > weeklyCooldown) {
                 userData[sender.id].primogems += 10000;
                 userData[sender.id].lastWeekly = Date.now();            
-                message.channel.send(`<@${sender.id}> you have claimed your daily 10000 Primogems`);
+                message.channel.send(`<@${sender.id}> you have claimed your weekly 10000 Primogems`);
             }
             else {
                 const cond = Math.floor((weeklyCooldown - Date.now() + userData[sender.id].lastWeekly)/3600000) > 48;
-                const daysRemaining = `${Math.floor((weeklyCooldown - Date.now() + userData[sender.id].lastWeekly)/(3600000)/24)} days`;
-                const hoursRemaining = `${Math.floor((weeklyCooldown - Date.now() + userData[sender.id].lastWeekly)/(3600000))} hours`;
+                const daysRemaining = `${Math.ceil((weeklyCooldown - Date.now() + userData[sender.id].lastWeekly)/(3600000)/24)} days`;
+                const hoursRemaining = `${Math.ceil((weeklyCooldown - Date.now() + userData[sender.id].lastWeekly)/(3600000))} hours`;
                 message.channel.send(`<@${sender.id}> you have already claimed your weekly. Claim it again after ${cond ? daysRemaining : hoursRemaining}.`);
             }
             return userData;

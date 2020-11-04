@@ -14,11 +14,15 @@ module.exports = {
             if (userData[sender.id]) {
                 if (userData[sender.id].primogems >= 1600) {
                     var reward = [];
-                    var tempReward;
                     let ctr;
+                    var msg;
                     for (ctr = 0; ctr < 10; ctr++) {
-                        tempReward = generalBanner(userData[sender.id].pityCounter4star, userData[sender.id].pityCounter5star);
-                        reward.push(tempReward);
+                        const [tempReward, rarity] = generalBanner(userData[sender.id].pityCounter4star, userData[sender.id].pityCounter5star);
+                        msg = `\``;
+                        for (var i = 0; i < rarity; i++)
+                            msg += '⭐';
+                        msg += ` ${tempReward}\``;
+                        reward.push(msg);
                         if (!userData[sender.id].inventory[tempReward])
                             userData[sender.id].inventory[tempReward] = 1;
                         else
@@ -27,11 +31,11 @@ module.exports = {
                             userData[sender.id].pityCounter4star = 0;
                         if (constants.generalBanner5Star.includes(tempReward))
                         userData[sender.id].pityCounter5star = 0;
-                            userData[sender.id].pityCounter4star++;
+                        userData[sender.id].pityCounter4star++;
                         userData[sender.id].pityCounter5star++;
                     }
-                    userData[sender.id].primogems -= 1600
-                    message.channel.send(`<@${sender.id}> you obtained the following:\n\n${reward.join("\n")}`);    
+                    userData[sender.id].primogems -= 1600;
+                    message.channel.send(`<@${sender.id}>\n\n${reward.sort().reverse().join("\n")}`);    
                 }
                 else {
                     message.channel.send(`<@${sender.id}> not enough Primogems`);

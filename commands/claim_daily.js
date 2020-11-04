@@ -20,7 +20,7 @@ module.exports = {
                 message.channel.send(`<@${sender.id}> you have claimed your daily 1600 Primogems`);
             }
             else {
-                message.channel.send(`<@${sender.id}> you have already claimed your daily. Claim it again after ${Math.floor((dailyCooldown - Date.now() + userData[sender.id].lastDaily)/3600000)} hours.`);
+                message.channel.send(`<@${sender.id}> you have already claimed your daily. Claim it again after ${Math.ceil((dailyCooldown - Date.now() + userData[sender.id].lastDaily)/3600000)} hours.`);
             }
         return userData;
     } catch (err) { console.log(err) }

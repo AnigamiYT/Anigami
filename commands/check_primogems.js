@@ -10,7 +10,7 @@ module.exports = {
     
         try {
             if (userData[sender.id]) {
-                message.channel.send(`<@${sender.id}> you have ${userData[sender.id].primogems} Primogems`);
+                message.channel.send(`<@${sender.id}>\n${userData[sender.id].primogems} <:A_primogem:769909799872626690>`);
             }
             else {
                 message.channel.send(`<@${sender.id}> you have no primogems`)

@@ -13,8 +13,12 @@ module.exports = {
         try {
             if (userData[sender.id]) {
                 if (userData[sender.id].primogems >= 160) {
-                    const reward = generalBanner(userData[sender.id].pityCounter4star, userData[sender.id].pityCounter5star);
-                    message.channel.send(`<@${sender.id}> you obtained ${reward}`);
+                    const [reward, rarity] = generalBanner(userData[sender.id].pityCounter4star, userData[sender.id].pityCounter5star);
+                    var msg = `<@${sender.id}> \n\n\``;
+                    for (var i = 0; i < rarity; i++)
+                        msg += '⭐';
+                    msg += ` ${reward}\``;
+                    message.channel.send(msg);
                     if (!userData[sender.id].inventory[reward])
                         userData[sender.id].inventory[reward] = 1;
                     else
