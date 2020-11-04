@@ -10,9 +10,7 @@ module.exports = {
         const { printCharacters } = require('../functions.js');
 
         try {
-            if (userData[sender.id]) {
-                message.channel.send(`<@${sender.id}>\n\n${printCharacters(userData[sender.id].inventory)}`);
-            }
+            message.channel.send(`<@${sender.id}>\n\n${printCharacters(userData.inventory.characters)}`);
         } catch (err) { console.log(err) }
 	},
 }

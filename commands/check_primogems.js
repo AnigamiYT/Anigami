@@ -9,12 +9,7 @@ module.exports = {
         const sender = message.author;
     
         try {
-            if (userData[sender.id]) {
-                message.channel.send(`<@${sender.id}>\n${userData[sender.id].primogems} <:A_primogem:769909799872626690>`);
-            }
-            else {
-                message.channel.send(`<@${sender.id}> you have no primogems`)
-            }
+            message.channel.send(`<@${sender.id}>\n${userData.primogems} <:A_primogem:769909799872626690>`);
         } catch (err) { console.log(err) }
 	},
 }

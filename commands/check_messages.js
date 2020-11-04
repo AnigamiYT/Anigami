@@ -9,12 +9,7 @@ module.exports = {
         const sender = message.author;
     
         try {
-            if (userData[sender.id]) {
-                message.channel.send(`<@${sender.id}> you have ${userData[sender.id].messageSent} messages`);
-            }
-            else {
-                message.channel.send(`<@${sender.id}> you have no messages yet`)
-            }
+            message.channel.send(`<@${sender.id}> you have ${userData.messageSent} messages`);
         } catch (err) { console.log(err) }
 	},
 }
