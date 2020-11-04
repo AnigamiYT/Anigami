@@ -17,7 +17,7 @@ for (const file of commandFiles) {
 // ======================================================= //
 
 bot.once('ready', () => {
-    console.log('Anigami is Here!');
+    console.log('Anigami is Heres!');
 })
 
 bot.login(token);
