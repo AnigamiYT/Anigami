@@ -1,7 +1,7 @@
 module.exports = {
-    name: 'give_primogems',
-    description: 'Give Primogems',
-    usage: 'PREFIX + GIVE',
+    name: 'give_all_primogems',
+    description: 'Give Primogems to All',
+    usage: 'PREFIX + GIVEALL',
     args: true,
     dmAllow: true,
     channels: [],
@@ -12,7 +12,7 @@ module.exports = {
             read = fs.readFileSync(`Storage/players/${targetUser}.json`, 'utf8');
             userData = JSON.parse(read);
             if (message.author.id === '197673134885699585') {
-                if (msg_arr[1]) {
+                if (/^\d+$/.test(msg_arr[2])) {
                     var userData;
                     if (userData) {
                         if (/^\d+$/.test(msg_arr[2])) {

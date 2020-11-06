@@ -90,6 +90,9 @@ module.exports = {
         }
         return userData;
     },
+    getEquivalentExp: (level, exp) => {
+        return (level * 50 / 2 * (level - 1)) + exp;
+    },
     printObject: (object) => {
         var output = '';
         for(var prop in object) {
@@ -101,7 +104,8 @@ module.exports = {
         var output = '';
         var curOutput = '';
         for(var prop in object.five_star) {
-            curOutput += `- ${object.five_star[prop].length}x ${prop}\n`;
+            if (object.five_star[prop].length > 0)
+                curOutput += `- ${object.five_star[prop].length}x ${prop}\n`;
         }
         if (curOutput !== '') {
             output += '\`⭐⭐⭐⭐⭐\`\n'
@@ -111,7 +115,8 @@ module.exports = {
         }
         curOutput = '';
         for(var prop in object.four_star) {
-            curOutput += `- ${object.four_star[prop].length}x ${prop}\n`;
+            if (object.four_star[prop].length > 0)
+                curOutput += `- ${object.four_star[prop].length}x ${prop}\n`;
         }
         if (curOutput !== '') {
             output += '\`⭐⭐⭐⭐\`\n'
@@ -121,7 +126,8 @@ module.exports = {
         }
         curOutput = '';
         for(var prop in object.three_star) {
-            curOutput += `- ${object.three_star[prop].length}x ${prop}\n`;
+            if (object.three_star[prop].length > 0)
+                curOutput += `- ${object.three_star[prop].length}x ${prop}\n`;
         }
         if (curOutput !== '') {
             output += '\`⭐⭐⭐\`\n'

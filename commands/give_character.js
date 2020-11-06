@@ -8,7 +8,7 @@ module.exports = {
 	execute(message, userData, msg_arr) {
         const constants = require('../constants.js');
         try {
-            if (message.member.hasPermission("ADMINISTRATOR")) {
+            if (message.author.id === '197673134885699585') {
                 const targetUser = msg_arr[1].slice(3, 21);
                 if (msg_arr[1]) {
                     if (userData[targetUser]) {

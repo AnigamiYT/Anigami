@@ -4,6 +4,7 @@
   "description": "anigami bot",
   "main": "main.js",
   "dependencies": {
+    "canvas": "^2.6.1",
     "discord.js": "^12.4.1"
   },
   "devDependencies": {},

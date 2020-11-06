@@ -1,0 +1,158 @@
+{
+    "FISCHL": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "AMBER": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "BENNETT": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "BARBARA": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "LISA": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "KAEYA": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "CHONGYUN": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "XIANGLING": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "XINGQIU": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "BEIDOU": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "SUCROSE": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "RAZOR": {
+        "baseAtk": 20,
+        "baseHp": 100,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "DILUC": {
+        "baseAtk": 30,
+        "baseHp": 150,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "JEAN": {
+        "baseAtk": 30,
+        "baseHp": 150,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "MONA": {
+        "baseAtk": 30,
+        "baseHp": 150,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "KEQING": {
+        "baseAtk": 30,
+        "baseHp": 150,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "QIQI": {
+        "baseAtk": 30,
+        "baseHp": 150,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "KLEE": {
+        "baseAtk": 30,
+        "baseHp": 150,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "VENTI": {
+        "baseAtk": 30,
+        "baseHp": 150,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "COCOGOAT": {
+        "baseAtk": 100,
+        "baseHp": 500,
+        "rarity": 6,
+        "rarity_text": "six_star"
+    },
+    "TIMMIE": {
+        "baseAtk": 100,
+        "baseHp": 500,
+        "rarity": 6,
+        "rarity_text": "six_star"
+    },
+    "WAGNER": {
+        "baseAtk": 100,
+        "baseHp": 500,
+        "rarity": 6,
+        "rarity_text": "six_star"
+    },
+    "GORDON-RAMSEY": {
+        "baseAtk": 100,
+        "baseHp": 500,
+        "rarity": 6,
+        "rarity_text": "six_star"
+    },
+    "STORMTERROR": {
+        "baseAtk": 100,
+        "baseHp": 500,
+        "rarity": 6,
+        "rarity_text": "six_star"
+    },
+    "SIGNORA": {
+        "baseAtk": 100,
+        "baseHp": 500,
+        "rarity": 6,
+        "rarity_text": "six_star"
+    },
+    "PAIMON": {
+        "baseAtk": 100,
+        "baseHp": 500,
+        "rarity": 6,
+        "rarity_text": "six_star"
+    }
+}

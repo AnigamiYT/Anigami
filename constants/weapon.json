@@ -1,0 +1,374 @@
+{
+    "Debate-Club": {
+        "atk": 10,
+        "materialExp": 100,
+        "rarity": 3,
+        "rarity_text": "three_star"
+    },
+    "Cold-Steel": {
+        "atk": 10,
+        "materialExp": 100,
+        "rarity": 3,
+        "rarity_text": "three_star"
+    },
+    "Sharpshooter's-Oath": {
+        "atk": 10,
+        "materialExp": 100,
+        "rarity": 3,
+        "rarity_text": "three_star"
+    },
+    "Magic-Guide": {
+        "atk": 10,
+        "materialExp": 100,
+        "rarity": 3,
+        "rarity_text": "three_star"
+    },
+    "Harbringer-of-Dawn": {
+        "atk": 10,
+        "materialExp": 100,
+        "rarity": 3,
+        "rarity_text": "three_star"
+    },
+    "Raven-Bow": {
+        "atk": 10,
+        "materialExp": 100,
+        "rarity": 3,
+        "rarity_text": "three_star"
+    },
+    "Ferrous-Shadow": {
+        "atk": 10,
+        "materialExp": 100,
+        "rarity": 3,
+        "rarity_text": "three_star"
+    },
+    "Slingshot": {
+        "atk": 10,
+        "materialExp": 100,
+        "rarity": 3,
+        "rarity_text": "three_star"
+    },
+    "Alley-Hunter": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Blackcliff-Warbow": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Compound-Bow": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Favonius-Warbow": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Prototype-Crescent": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Royal-Bow": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Rust": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Sacrificial-Bow": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "The-Stringless": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "The-Viridescent-Hunt": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Blackcliff-Amulet": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Eye-of-Perception": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Favonius-Codex": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Mappa-Mare": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Prototype-Malice": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Royal-Grimoire": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Scrificial-Fragments": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Solar-Pearl": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "The-Widsith": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Wine-and-Song": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Blackcliff-Slasher": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Favonius-Greatsword": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Lithic-Blade": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Prototype-Aminus": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Rainslasher": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Royal-Greatsword": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Sacrificial-Greatsword": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Serpent-Spine": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "The-Bell": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Whiteblind": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Crescent-Pike": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Deathmatch": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Dragon's-Bane": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Favonius-Lance": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Lithic-Spear": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Prototype-Grudge": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Blackcliff-Longsword": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Favonius-Sword": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Iron-Sting": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Lion's-Roar": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Prototype-Rancour": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Royal-Longsword": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Sacrificial-Sword": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "The-Alley-Flash": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "The-Black-Sword": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "The-Flute": {
+        "atk": 50,
+        "materialExp": 500,
+        "rarity": 4,
+        "rarity_text": "four_star"
+    },
+    "Wolf's-Gravestone": {
+        "atk": 200,
+        "materialExp": 2000,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "Aquila-Favonia": {
+        "atk": 200,
+        "materialExp": 2000,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "Lost-Prayer-to-the-Sacred-Winds": {
+        "atk": 200,
+        "materialExp": 2000,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "Skyward-Blade": {
+        "atk": 200,
+        "materialExp": 2000,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "Skyward-Pride": {
+        "atk": 200,
+        "materialExp": 2000,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "Skyward-Harp": {
+        "atk": 200,
+        "materialExp": 2000,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "Primordial-Jade-Winged-Spear": {
+        "atk": 200,
+        "materialExp": 2000,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    },
+    "Amos'-Bow": {
+        "atk": 200,
+        "materialExp": 2000,
+        "rarity": 5,
+        "rarity_text": "five_star"
+    }
+}
