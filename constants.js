@@ -24,6 +24,7 @@ const generalBanner4StarWeapons = [...weapons4Star];
 const kleeBanner5Star = ['Diluc', 'Jean', 'Mona', 'Keqing', 'Qiqi', 'Klee'];
 
 module.exports = {
+    // STATE CONSTANTS
     userInitialState: {
         messageSent: 0,
         primogems: 0,
@@ -32,6 +33,9 @@ module.exports = {
         lastDaily: 0,
         lastWeekly: 0,
         lastMonthly: 0,
+        level: 1,
+        exp: 0,
+        party: [],
         inventory: {
             characters: {},
             weapons: {},
@@ -43,8 +47,8 @@ module.exports = {
         level: 1,
         constellation_level: 0,
         current_exp: 0,
-        current_health: 1, //! CHANGE THIS WITH VALUE FROM CHARACTER CONSTANTS
-        equipped_item: "", //! Make this a reference to the inventory value when changed with command
+        current_health: 1,
+        equipped_item: "",
     },
     weaponInitialState: {
         rank: 1,
@@ -52,6 +56,8 @@ module.exports = {
         stored_exp: 0,
         isEquipped: "",
     },
+
+    // CHARACTER, WEAPON, AND BANNER CONSTANTS
     characters6Star: characters6Star,
     characters5Star: characters5Star,
     characters4Star: characters4Star,
@@ -67,4 +73,17 @@ module.exports = {
     weapons: allWeapons,
     characters: allCharacters,
     consumables: consumables,
+
+    // BASE VALUE CONSTANTS
+
+    // LEYLINE OUTCROPS CONSTANTS
+    leylineOutcropsBaseARExp: 100,
+    leylineOutcropsBaseCharExp: 100,
+    leylineOutcropsBaseMora: 5000,
+    leylineOutcropsBaseAtk: 100,
+    leylineOutcropsBaseHp: 500,
+
+    charLevelUpBaseExp: 50,
+    weaponLevelUpBaseExp: 50,
+    ARLevelUpBaseExp: 500,
 }
