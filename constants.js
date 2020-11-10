@@ -83,6 +83,16 @@ module.exports = {
     leylineOutcropsBaseAtk: 100,
     leylineOutcropsBaseHp: 500,
 
+       // LEYLINE EVENT CONSTANTS
+    // leylineEventBaseARExp: 100,
+    // leylineEventBaseCharExp: 100,
+    // leylineEventBaseMora: 5000,
+    // leylineEventBaseAtk: 100,
+    // leylineEventBaseHp: 500,
+    // leylineEventGems: 5,   // this is the gems value
+
+
+    //BAES LEVEL
     charLevelUpBaseExp: 50,
     weaponLevelUpBaseExp: 50,
     ARLevelUpBaseExp: 500,
