@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   name: 'flip_primogems',
   description: 'Gamble your Primogems',
   usage: 'PREFIX + FLIP + AMOUNT',

@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-import { generalBanner, assignItem } from '../../../functions.js';
-import * as constants from '../../../constants.js';
+const { generalBanner, assignItem } = require('../../../functions.js');
+const constants = require('../../../constants.js');
 
-export default {
+module.exports = {
   name: 'whale_pull',
   description: 'Make a whale pull',
   usage: 'PREFIX + WHALE',

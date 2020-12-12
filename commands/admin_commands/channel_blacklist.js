@@ -1,6 +1,6 @@
-import * as fs from 'fs';
+const fs = require('fs');
 
-export default {
+module.exports = {
   name: 'channel_blacklist',
   description: 'Blacklist a Channel',
   usage: 'PREFIX + BLACKLIST',

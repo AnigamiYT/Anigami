@@ -2,12 +2,12 @@
 /* eslint-disable prefer-destructuring */
 /* eslint-disable prefer-spread */
 /* eslint-disable max-len */
-import * as fs from 'fs';
-import { getWeaponData } from '../../../functions.js';
+const fs = require('fs');
+const { getWeaponData } = require('../../../functions.js');
 
 const weaponConstants = JSON.parse(fs.readFileSync('constants/weapon.json', 'utf8'));
 
-export default {
+module.exports = {
   name: 'upgrade_weapon',
   description: 'Upgrades a Weapon',
   usage: 'PREFIX + UPGRADE',

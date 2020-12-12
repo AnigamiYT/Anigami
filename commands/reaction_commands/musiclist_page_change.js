@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-import * as fs from 'fs';
-import { MUSIC_PAGINATION_COUNT } from '../../constants.js';
+const fs = require('fs');
+const { MUSIC_PAGINATION_COUNT } = require('../../constants.js');
 
-export default {
+module.exports = {
   name: 'musiclist_page_change',
   description: 'Change music list page',
   usage: 'PREFIX + LISTMUSIC, then react on the message',

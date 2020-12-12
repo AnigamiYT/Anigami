@@ -1,7 +1,7 @@
-import { play } from '../../../functions.js';
+const { play } = require('../../../functions.js');
 
 /* eslint-disable camelcase */
-export default {
+module.exports = {
   name: 'play_music',
   description: 'Play music at index',
   usage: 'PREFIX + PLAYMUSIC',

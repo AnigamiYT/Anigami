@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-import { generalBanner, assignItem } from '../../../functions.js';
-import { generalBanner4Star, generalBanner5Star } from '../../../constants.js';
+const { generalBanner, assignItem } = require('../../../functions.js');
+const { generalBanner4Star, generalBanner5Star } = require('../../../constants.js');
 
-export default {
+module.exports = {
   name: 'single_pull',
   description: 'Make a single pull',
   usage: 'PREFIX + SINGLEPULL',

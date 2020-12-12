@@ -1,6 +1,6 @@
-import * as fs from 'fs';
+const fs = require('fs');
 
-export default {
+module.exports = {
   name: 'channel_whitelist',
   description: 'Whitelist a Channel',
   usage: 'PREFIX + WHITELIST',

@@ -1,8 +1,8 @@
-import * as fs from 'fs';
-import { arrayToObject } from '../../utils/index.js';
-import { characters4Star, characters5Star, characters6Star } from '../../constants.js';
+const fs = require('fs');
+const { arrayToObject } = require('../../utils/index.js');
+const { characters4Star, characters5Star, characters6Star } = require('../../constants.js');
 
-export default {
+module.exports = {
   name: 'generate_character_constants',
   description: 'Generate Constants for Characters',
   usage: 'PREFIX + GENERATE_CHARACTER_CONSTANTS',

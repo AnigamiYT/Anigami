@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
-import * as constants from '../../constants.js';
+const constants = require('../../constants.js');
 
-export default {
+module.exports = {
   name: 'give_weapon',
   description: 'Give Weapon',
   usage: 'PREFIX + GIVE_WEAPON',

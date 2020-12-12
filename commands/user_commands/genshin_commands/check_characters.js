@@ -1,13 +1,13 @@
 /* eslint-disable max-len */
-import * as fs from 'fs';
-import {
+const fs = require('fs');
+const {
   printCharacters,
   calcStats,
   getWeaponDamage,
   getCharacterData,
-} from '../../../functions.js';
+} = require('../../../functions.js');
 
-export default {
+module.exports = {
   name: 'check_characters',
   description: 'Check your characters',
   usage: 'PREFIX + CHARACTERS',

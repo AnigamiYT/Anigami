@@ -1,12 +1,21 @@
 /* eslint-disable max-len */
-import { Client } from 'discord.js';
-import { readFileSync, writeFile, unlinkSync } from 'fs';
-import DBL from 'dblapi.js';
-import YoutubeAPI from 'discord-youtube-api';
-import { createConnection } from 'mysql';
-import * as constants from './constants.js';
-import { token, database } from './credentials.js';
-import * as commands from './commands/index.js';
+const { readFileSync, writeFile, unlinkSync } = require('fs');
+const DBL = require('dblapi.js');
+const YoutubeAPI = require('discord-youtube-api');
+const { createConnection } = require('mysql');
+const { Client } = require('discord.js');
+const constants = require('./constants.js');
+const { token, database } = require('./credentials.js');
+const commandList = require('./commands/index.js');
+
+// Push command list into commands
+const commands = {
+  ...commandList.admin_commands,
+  ...commandList.reaction_commands,
+  ...commandList.user_commands.general_commands,
+  ...commandList.user_commands.genshin_commands,
+  ...commandList.user_commands.music_commands,
+};
 
 const { userInitialState } = constants;
 const bot = new Client();
@@ -17,13 +26,12 @@ const dbl = new DBL('', {
 });
 
 const youtube = new YoutubeAPI('AIzaSyCMMoseDz8dNM5dv_qo9R-xMzveKgM_U7Q');
-
 const con = createConnection(database);
 
 // Global Constants
 const channelListPath = './config/channelList.json';
 const flagsListPath = './flags.json';
-const isMainBot = 2;
+const isMainBot = 1;
 const prefix = isMainBot === 1 ? '!' : '~';
 
 // Global Variables

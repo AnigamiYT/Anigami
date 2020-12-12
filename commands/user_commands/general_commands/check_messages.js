@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   name: 'check_messages',
   description: 'Check the number of messages',
   usage: 'PREFIX + MESSAGES',

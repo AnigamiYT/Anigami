@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   name: 'check_primogems',
   description: 'Check your amount of Primogems',
   usage: 'PREFIX + PRIMOGEMS',

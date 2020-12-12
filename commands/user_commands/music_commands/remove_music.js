@@ -1,7 +1,7 @@
-import { readFileSync, writeFile } from 'fs';
+const { readFileSync, writeFile } = require('fs');
 
 /* eslint-disable camelcase */
-export default {
+module.exports = {
   name: 'remove_music',
   description: 'Remove music at index',
   usage: 'PREFIX + REMOVEMUSIC',

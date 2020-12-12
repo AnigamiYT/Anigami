@@ -4,6 +4,7 @@
   "description": "anigami bot",
   "main": "main.js",
   "dependencies": {
+    "@babel/node": "^7.12.10",
     "@discordjs/opus": "^0.3.3",
     "body-parser": "^1.19.0",
     "canvas": "^2.6.1",
@@ -22,6 +23,7 @@
     "@babel/core": "^7.12.10",
     "eslint": "^7.15.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-google": "^0.14.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
@@ -48,5 +50,5 @@
     "url": "https://github.com/AnigamiYT/Anigami/issues"
   },
   "homepage": "https://github.com/AnigamiYT/Anigami#readme",
-  "type": "module"
+  "type": "commonjs"
 }

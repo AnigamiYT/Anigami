@@ -1,8 +1,8 @@
-import * as Discord from 'discord.js';
-import Canvas from 'canvas';
-import { ARLevelUpBaseExp } from '../../../constants.js';
+const Discord = require('discord.js');
+const Canvas = require('canvas');
+const { ARLevelUpBaseExp } = require('../../../constants.js');
 
-export default {
+module.exports = {
   name: 'check_profile',
   description: 'Check your Profile',
   usage: 'PREFIX + PROFILE',

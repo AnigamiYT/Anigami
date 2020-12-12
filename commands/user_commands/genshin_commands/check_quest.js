@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   name: 'check_quest',
   description: 'Check your quest',
   usage: 'PREFIX + QUEST',

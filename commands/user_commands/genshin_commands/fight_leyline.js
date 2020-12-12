@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
-import * as fs from 'fs';
-import { calcStats, getWeaponDamage } from '../../../functions.js';
-import {
+const fs = require('fs');
+const { calcStats, getWeaponDamage } = require('../../../functions.js');
+const {
   leylineOutcropsBaseARExp,
   leylineOutcropsBaseAtk,
   leylineOutcropsBaseCharExp,
@@ -9,11 +9,11 @@ import {
   leylineOutcropsBaseMora,
   charLevelUpBaseExp,
   ARLevelUpBaseExp,
-} from '../../../constants.js';
+} = require('../../../constants.js');
 
 const characterConstants = JSON.parse(fs.readFileSync('constants/character.json', 'utf8'));
 
-export default {
+module.exports = {
   name: 'fight_leyline',
   description: 'Fight Leylines',
   usage: 'PREFIX + LEYLINE',

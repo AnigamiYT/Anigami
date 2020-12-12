@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   name: 'claim_daily',
   description: 'Claim daily reward',
   usage: 'PREFIX + DAILY',
