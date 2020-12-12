@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   name: 'check_pulls',
   description: 'Check the number of Pulls you can make',
   usage: 'PREFIX + pulls',

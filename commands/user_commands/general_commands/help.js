@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   name: 'help',
   description: 'HELP',
   usage: 'PREFIX + HELP',

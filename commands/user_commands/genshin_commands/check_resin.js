@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   name: 'check_resin',
   description: 'Check your amount of Resins',
   usage: 'PREFIX + RESINS',

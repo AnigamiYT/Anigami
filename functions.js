@@ -3,11 +3,10 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable no-param-reassign */
 /* eslint-disable max-len */
-import { readFileSync, writeFile } from 'fs';
-import * as ytdl from 'ytdl-core';
-import * as constants from './constants.js';
 
-import {
+const { readFileSync, writeFile } = require('fs');
+const ytdl = require('ytdl-core');
+const {
   characters4Star,
   characters5Star,
   characters6Star,
@@ -17,12 +16,13 @@ import {
   characterInitialState,
   weaponInitialState,
   consumables,
-} from './constants.js';
+} = require('./constants.js');
+const constants = require('./constants.js');
 
 const weaponConstants = JSON.parse(readFileSync('constants/weapon.json', 'utf8'));
 const characterConstants = JSON.parse(readFileSync('constants/character.json', 'utf8'));
 
-export const generalBanner = (pity4star, pity5star) => {
+const generalBanner = (pity4star, pity5star) => {
   if (pity5star >= 90) {
     return [constants.generalBanner5Star[Math.floor(Math.random() * constants.generalBanner5Star.length)], 5];
   }
@@ -46,7 +46,7 @@ export const generalBanner = (pity4star, pity5star) => {
   return [constants.weapons3Star[Math.floor(Math.random() * constants.weapons3Star.length)], 3];
 };
 
-export const assignItem = (userData, reward) => {
+const assignItem = (userData, reward) => {
   if (characters4Star.includes(reward)) {
     if (!userData.inventory.characters.four_star) { userData.inventory.characters.four_star = {}; }
     if (!userData.inventory.characters.four_star[reward]) { userData.inventory.characters.four_star[reward] = { ...characterInitialState }; } else { userData.inventory.characters.four_star[reward].constellation_level++; }
@@ -72,9 +72,9 @@ export const assignItem = (userData, reward) => {
   return userData;
 };
 
-export const getEquivalentExp = (level, exp) => (level * 50 / 2 * (level - 1)) + exp;
+const getEquivalentExp = (level, exp) => ((level * 50) / (2 * (level - 1))) + exp;
 
-export const printObject = (object) => {
+const printObject = (object) => {
   let output = '';
   for (const prop in object) {
     output += `${prop}: ${object[prop]}\n`;
@@ -82,7 +82,7 @@ export const printObject = (object) => {
   return output;
 };
 
-export const printWeapons = (object) => {
+const printWeapons = (object) => {
   let output = '';
   let curOutput = '';
   for (const prop in object.five_star) {
@@ -117,7 +117,7 @@ export const printWeapons = (object) => {
   return output;
 };
 
-export const printCharacters = (object) => {
+const printCharacters = (object) => {
   let output = '';
   let curOutput = '';
   for (const prop in object.six_star) {
@@ -152,18 +152,18 @@ export const printCharacters = (object) => {
   return output;
 };
 
-export const calcStats = (baseAtk, baseHp, level, constellation, weaponDamage) => {
+const calcStats = (baseAtk, baseHp, level, constellation, weaponDamage) => {
   const atk = Math.floor(baseAtk * (1 + (level - 1) / 10) * (constellation * 0.2 + 1) + weaponDamage);
   const hp = Math.floor(baseHp * (1 + (level - 1) / 10) * (constellation * 0.2 + 1));
   return [atk, hp];
 };
 
-export const calcStatsWeapon = (baseAtk, level, rank) => {
+const calcStatsWeapon = (baseAtk, level, rank) => {
   const atk = baseAtk * (1 + (rank - 1) / 10) * (level + 1);
   return atk;
 };
 
-export const getWeaponData = (userData, weapon) => {
+const getWeaponData = (userData, weapon) => {
   if (weaponConstants[weapon]) {
     if (userData.inventory.weapons[weaponConstants[weapon].rarity_text]) {
       const weaponData = userData.inventory.weapons[weaponConstants[weapon].rarity_text][weapon];
@@ -173,7 +173,17 @@ export const getWeaponData = (userData, weapon) => {
   return undefined;
 };
 
-export const getWeaponDamage = (userData, character) => {
+const getCharacterData = (userData, character) => {
+  if (characterConstants[character]) {
+    if (userData.inventory.characters[characterConstants[character].rarity_text]) {
+      const characterData = userData.inventory.characters[characterConstants[character].rarity_text][character];
+      return characterData;
+    }
+  }
+  return undefined;
+};
+
+const getWeaponDamage = (userData, character) => {
   const charData = getCharacterData(userData, character);
   let weaponData;
   if (charData.equipped_item && charData.equipped_item !== '') {
@@ -185,17 +195,7 @@ export const getWeaponDamage = (userData, character) => {
   return 0;
 };
 
-export const getCharacterData = (userData, character) => {
-  if (characterConstants[character]) {
-    if (userData.inventory.characters[characterConstants[character].rarity_text]) {
-      const characterData = userData.inventory.characters[characterConstants[character].rarity_text][character];
-      return characterData;
-    }
-  }
-  return undefined;
-};
-
-export const roundRect = (ctx, x, y, height, width, radius, fill, stroke) => {
+const roundRect = (ctx, x, y, height, width, radius, fill, stroke) => {
   if (typeof stroke === 'undefined') {
     stroke = true;
   }
@@ -233,7 +233,7 @@ export const roundRect = (ctx, x, y, height, width, radius, fill, stroke) => {
   }
 };
 
-export const play = (connection, number, message) => {
+const play = (connection, number, message) => {
   const musicData = JSON.parse(readFileSync('./data/music.json', 'utf8'));
   const { musicList } = musicData;
   let next = number;
@@ -254,4 +254,20 @@ export const play = (connection, number, message) => {
       play(connection, next, message);
     })
     .on('error', (error) => console.error(error));
+};
+
+module.exports = {
+  generalBanner,
+  assignItem,
+  getEquivalentExp,
+  printObject,
+  printWeapons,
+  printCharacters,
+  calcStats,
+  calcStatsWeapon,
+  getWeaponData,
+  getWeaponDamage,
+  getCharacterData,
+  roundRect,
+  play,
 };

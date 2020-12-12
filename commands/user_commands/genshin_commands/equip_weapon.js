@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
-import { getWeaponData, getCharacterData } from '../../../functions.js';
+const { getWeaponData, getCharacterData } = require('../../../functions.js');
 
-export default {
+module.exports = {
   name: 'equip_weapon',
   description: 'Equip your Weapon',
   usage: 'PREFIX + EQUIP',

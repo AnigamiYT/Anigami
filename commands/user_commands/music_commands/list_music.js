@@ -1,8 +1,9 @@
-import { readFileSync } from 'fs';
-import { MUSIC_PAGINATION_COUNT } from '../../../constants.js';
+const { readFileSync } = require('fs');
+
+const { MUSIC_PAGINATION_COUNT } = require('../../../constants.js');
 
 /* eslint-disable camelcase */
-export default {
+module.exports = {
   name: 'list_music',
   description: 'List music at index',
   usage: 'PREFIX + LISTMUSIC',

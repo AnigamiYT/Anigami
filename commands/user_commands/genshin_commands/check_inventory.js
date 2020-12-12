@@ -1,6 +1,6 @@
-import { printObject } from '../../../functions.js';
+const { printObject } = require('../../../functions.js');
 
-export default {
+module.exports = {
   name: 'check_inventory',
   description: 'Check your inventory',
   usage: 'PREFIX + INVENTORY',

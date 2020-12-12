@@ -1,5 +1,12 @@
 /* eslint-disable camelcase */
-export { default as play_music } from './play_music.js';
-export { default as list_music } from './list_music.js';
-export { default as add_music } from './add_music.js';
-export { default as remove_music } from './remove_music.js';
+const play_music = require('./play_music.js');
+const list_music = require('./list_music.js');
+const add_music = require('./add_music.js');
+const remove_music = require('./remove_music.js');
+
+module.exports = {
+  play_music,
+  list_music,
+  add_music,
+  remove_music,
+};

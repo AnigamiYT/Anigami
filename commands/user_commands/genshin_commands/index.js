@@ -1,20 +1,42 @@
 /* eslint-disable camelcase */
-export { default as check_characters } from './check_characters.js';
-export { default as check_inventory } from './check_inventory.js';
-export { default as check_primogems } from './check_primogems.js';
-export { default as check_profile } from './check_profile.js';
-export { default as check_pulls } from './check_pulls.js';
-export { default as check_quest } from './check_quest.js';
-export { default as check_resin } from './check_resin.js';
-export { default as check_weapons } from './check_weapons.js';
-export { default as claim_daily } from './claim_daily.js';
-export { default as claim_monthly } from './claim_monthly.js';
-export { default as claim_weekly } from './claim_weekly.js';
-export { default as equip_weapon } from './equip_weapon.js';
-export { default as fight_leyline } from './fight_leyline.js';
-export { default as flip_primogems } from './flip_primogems.js';
-export { default as multi_pull } from './multi_pull.js';
-export { default as party_setup } from './party_setup.js';
-export { default as single_pull } from './single_pull.js';
-export { default as upgrade_weapon } from './upgrade_weapon.js';
-export { default as whale_pull } from './whale_pull.js';
+const check_characters = require('./check_characters.js');
+const check_inventory = require('./check_inventory.js');
+const check_primogems = require('./check_primogems.js');
+const check_profile = require('./check_profile.js');
+const check_pulls = require('./check_pulls.js');
+const check_quest = require('./check_quest.js');
+const check_resin = require('./check_resin.js');
+const check_weapons = require('./check_weapons.js');
+const claim_daily = require('./claim_daily.js');
+const claim_monthly = require('./claim_monthly.js');
+const claim_weekly = require('./claim_weekly.js');
+const equip_weapon = require('./equip_weapon.js');
+const fight_leyline = require('./fight_leyline.js');
+const flip_primogems = require('./flip_primogems.js');
+const multi_pull = require('./multi_pull.js');
+const party_setup = require('./party_setup.js');
+const single_pull = require('./single_pull.js');
+const upgrade_weapon = require('./upgrade_weapon.js');
+const whale_pull = require('./whale_pull.js');
+
+module.exports = {
+  check_characters,
+  check_inventory,
+  check_primogems,
+  check_profile,
+  check_pulls,
+  check_quest,
+  check_resin,
+  check_weapons,
+  claim_daily,
+  claim_monthly,
+  claim_weekly,
+  equip_weapon,
+  fight_leyline,
+  flip_primogems,
+  multi_pull,
+  party_setup,
+  single_pull,
+  upgrade_weapon,
+  whale_pull,
+};

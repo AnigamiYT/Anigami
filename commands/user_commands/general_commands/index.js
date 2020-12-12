@@ -1,3 +1,8 @@
 /* eslint-disable camelcase */
-export { default as check_messages } from './check_messages.js';
-export { default as help } from './help.js';
+const check_messages = require('./check_messages.js');
+const help = require('./help.js');
+
+module.exports = {
+  check_messages,
+  help,
+};

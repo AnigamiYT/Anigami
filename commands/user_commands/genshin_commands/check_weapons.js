@@ -1,12 +1,12 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable max-len */
-import * as fs from 'fs';
-import { printWeapons, calcStatsWeapon, getWeaponData } from '../../../functions.js';
-import * as constants from '../../../constants.js';
+const fs = require('fs');
+const { printWeapons, calcStatsWeapon, getWeaponData } = require('../../../functions.js');
+const constants = require('../../../constants.js');
 
 const weaponConstants = JSON.parse(fs.readFileSync('constants/weapon.json', 'utf8'));
 
-export default {
+module.exports = {
   name: 'check_weapons',
   description: 'Check your weapons',
   usage: 'PREFIX + WEAPONS',

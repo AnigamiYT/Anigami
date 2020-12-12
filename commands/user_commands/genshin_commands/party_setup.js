@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-import * as fs from 'fs';
-import { calcStats, getCharacterData, getWeaponDamage } from '../../../functions.js';
+const fs = require('fs');
+const { calcStats, getCharacterData, getWeaponDamage } = require('../../../functions.js');
 
-export default {
+module.exports = {
   name: 'party_setup',
   description: 'Setup your party',
   usage: 'PREFIX + PARTY',

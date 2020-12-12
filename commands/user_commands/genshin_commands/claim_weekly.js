@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-export default {
+module.exports = {
   name: 'claim_weekly',
   description: 'Claim weekly reward',
   usage: 'PREFIX + WEEKLY',

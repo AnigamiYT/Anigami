@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   name: 'give_primogems',
   description: 'Give Primogems',
   usage: 'PREFIX + GIVE',

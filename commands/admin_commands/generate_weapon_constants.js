@@ -1,8 +1,8 @@
-import * as fs from 'fs';
-import { arrayToObject } from '../../utils/index.js';
-import { weapons3Star, weapons4Star, weapons5Star } from '../../constants.js';
+const fs = require('fs');
+const { arrayToObject } = require('../../utils/index.js');
+const { weapons3Star, weapons4Star, weapons5Star } = require('../../constants.js');
 
-export default {
+module.exports = {
   name: 'generate_weapon_constants',
   description: 'Generate Constants for Weapons',
   usage: 'PREFIX + GENERATE_WEAPON_CONSTANTS',

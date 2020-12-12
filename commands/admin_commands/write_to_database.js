@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-syntax */
-import * as fs from 'fs';
+const fs = require('fs');;
 
-export default {
+module.exports = {
   name: 'write_to_database',
   description: 'Write to Database',
   usage: 'PREFIX + WRITE_TO_DATABASE',
