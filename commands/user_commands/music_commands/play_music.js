@@ -8,14 +8,14 @@ module.exports = {
   args: true,
   dmAllow: true,
   channels: [],
-  execute: async (message, msg_arr, connection) => {
+  execute: async (message, msgArr, connection) => {
     try {
       const hasDJRole = message.member.roles.cache
         .find((r) => r.name === 'cafe-dj');
       if (hasDJRole) {
         let music_index = 1;
-        if (msg_arr[1] !== undefined) {
-          music_index = parseInt(msg_arr[1], 10);
+        if (msgArr[1] !== undefined) {
+          music_index = parseInt(msgArr[1], 10);
         }
         play(connection, music_index - 1, message);
         return;

@@ -177,7 +177,7 @@ bot.on('message', async (message) => {
           const voiceChannel = message.member.voice.channel;
           const connection = await voiceChannel.join();
           connectionCurrent = connection;
-          commands.play_music.execute(message, userData);
+          commands.play_music.execute(message, msgArr, connection);
           return;
         }
 

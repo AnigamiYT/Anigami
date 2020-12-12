@@ -248,7 +248,7 @@ const play = (connection, number, message) => {
   writeFile('data/music.json', JSON.stringify(musicData, null, 4), (err) => {
     if (err) console.error(err);
   });
-  connection
+  const dispatcher = connection
     .play(ytdl(musicList[number].link))
     .on('finish', () => {
       play(connection, next, message);
